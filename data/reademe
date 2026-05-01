@@ -1,0 +1,15 @@
+Dataset Description
+
+This repository contains four dynamic directed graph (DDG) datasets, denoted as DDG1--DDG4. Each dataset is stored in a plain text file, where each line represents one observed weighted directed interaction. The data format is:
+
+source_node_id::target_node_id::time_id::weight
+
+Specifically, source_node_id denotes the starting node of a directed link, target_node_id denotes the ending node of the directed link, time_id denotes the temporal index or snapshot index, and weight denotes the observed interaction strength between the source node and the target node at the corresponding time. For example, the record
+
+6::2::1::15.0
+
+means that there is a directed interaction from node 6 to node 2 at time snapshot 1, and the observed weight of this interaction is 15.0.
+
+These DDG datasets can be naturally represented as third-order high-dimensional incomplete tensors, where the first mode corresponds to source nodes, the second mode corresponds to target nodes, and the third mode corresponds to temporal snapshots. 
+
+Due to GitHub limitations, other data cannot be uploaded. Please contact the author if needed.
